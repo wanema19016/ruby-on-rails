@@ -1,6 +1,8 @@
 FROM gitpod/workspace-postgres
 USER gitpod
 
+ERROR
+
 # Install the Ruby version specified in '.ruby-version'
 COPY --chown=gitpod:gitpod .ruby-version /tmp
 RUN echo "rvm_gems_path=/home/gitpod/.rvm" > ~/.rvmrc
